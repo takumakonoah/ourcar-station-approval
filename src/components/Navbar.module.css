@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logo style removed */
+
+.navList {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--color-text-dim);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s;
+}
+
+.navLink:hover {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+}
+
+.active {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

@@ -1,0 +1,235 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.statsCard {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.bigNumber {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-dim);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    color: var(--color-primary);
+}
+
+.activeTab {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+
+.inputCard {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea,
+.select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-sm);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    width: 100%;
+}
+
+.textarea {
+    font-family: monospace;
+    resize: vertical;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.responseMsg {
+    padding: 1rem;
+    background: var(--color-bg);
+    border-left: 4px solid var(--color-primary);
+    font-weight: 500;
+}
+
+.infoMsg {
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-primary);
+}
+
+.tableWrapper {
+    margin: 1.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    vertical-align: middle;
+}
+
+.table th {
+    background: rgba(0, 0, 0, 0.02);
+    font-weight: 600;
+    color: var(--color-text-dim);
+}
+
+.code {
+    font-family: monospace;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.badgeValid {
+    background: rgba(0, 0, 255, 0.1);
+    color: var(--color-primary);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badgeSuccess {
+    background: rgba(0, 255, 128, 0.15);
+    color: var(--color-success);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badgeError {
+    background: rgba(255, 0, 0, 0.1);
+    color: var(--color-danger);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.detail {
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+}
+
+.summary {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-dim);
+}
+
+.approveBtnMini {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+}
+
+.approveBtnMini:hover {
+    opacity: 0.9;
+}
+
+.approveBtnMini:disabled {
+    background: var(--color-text-dim);
+    cursor: not-allowed;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}

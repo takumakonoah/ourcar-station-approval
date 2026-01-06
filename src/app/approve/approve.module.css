@@ -1,0 +1,107 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.searchCard {
+    background: var(--color-surface);
+}
+
+.searchForm {
+    display: flex;
+    gap: 1rem;
+}
+
+.searchInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-sm);
+    font-size: 1.1rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.listCard {
+    background: var(--color-surface);
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--color-text-dim);
+}
+
+.table tr {
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.table tr:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.selectedRow {
+    background: rgba(var(--hue-primary), 100%, 95%, 0.1) !important;
+    border-left: 3px solid var(--color-primary);
+}
+
+.approvedRow {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.badgeApproved {
+    color: var(--color-success);
+    background: rgba(0, 255, 0, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.badgeUnapproved {
+    color: var(--color-warning);
+    background: rgba(255, 165, 0, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.successMessage {
+    padding: 1rem;
+    background: var(--color-success);
+    color: white;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.errorMessage {
+    padding: 1rem;
+    background: var(--color-danger);
+    color: white;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+}
